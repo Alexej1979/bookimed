@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html> 
+    <head>
+        <meta charset="UTF-8">
+        <title></title>     
+        <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">       
+        <link href="css/bookimed.css" rel="stylesheet">        
+        <link rel="stylesheet" type="text/css" href="css/component.css">        
+    </head>
+    <body>   
+        <!-- SVG Sprite -->
+        <div style="height: 0; width: 0; position: absolute; visibility: hidden;" aria-hidden="true">
+            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" focusable="false">
+            <symbol id="ripply-scott" viewBox="0 0 100 100">
+                <circle id="ripple-shape" cx="1" cy="1" r="1" />
+            </symbol>
+            </svg>
+        </div>
+        <!-- /end sprite -->
+        
+        <div class ="container">
+            <div class ="row position">
+                <div class="col-md-2 col-xs-12 col-sm-4 logo">
+                    <a href="/">
+                        <img src="img/logo-heart.png" alt="Bookimed" class="logo">
+                    </a>
+                </div>
+                <div class="col-md-4 col-xs-12 col-sm-4 patients">
+                    <h1>International patients support center</h1>
+                </div>               
+                
+                <div class="col-md-6 col-xs-12 col-sm-4 text-right flex-center">
+                    <div class="login-btn">
+                        <a>Login</a>
+                    </div>
+                    <button id="js-ripple-btn" class="button styl-material">
+                        Call me back
+                        <svg class="ripple-obj" id="js-ripple">
+                            <use height="100" width="100" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#ripply-scott" class="js-ripple"></use>
+                        </svg>
+                    </button>
+                    
+                    <div class="popup">
+                        <input type="text" class="form-control" id="exampleInputName2" placeholder="Jane Doe">                               
+                        <input type="text" class="form-control" id="exampleInputName2" placeholder="Jane Doe"> 
+                        <a class="btn btn-primary">OK</a>
+                    </div>                    
+                </div>
+            </div>
+            
+            <div class ="row">                
+                <div class="col-md-12 text-right">
+                    <span class="lang-name">Русский: </span>
+                    <a href="//ru.bookimed.com/" class="leng popularCountry">Популярные страны и клиники (2016)</a>                    
+                </div> 
+            </div>
+            
+            <div class ="row flexRow">                
+                <div class="col-md-7 col-sm-6 col-xs-12">
+                    <div class="search">
+                        <div class ="row">                
+                            <div class ="col-md-9"> 
+                                <div class="row">
+                                    <div class="col-md-8">
+                                        <div class="find-doctor">
+                                            <div class="form-group find-doctor-text">
+                                                <div class="styleTextSearch">Disease, department, clinic, doctor</div>
+                                                <input type="text" class="form-control" placeholder="oncology">
+                                            </div>
+                                        </div>
+                                    </div> 
+                                    <div class="col-md-4">
+                                        <div class="country">
+                                            <div class="btn-group">
+                                                <div class="country-style">Country</div>
+                                                
+                                                <select class="form-control">
+                                                    <option>All countries</option>
+                                                    <option>Austria</option>
+                                                    <option>Bulgaria</option>
+                                                    <option>Czech Republic</option>
+                                                    <option>Estonia</option>
+                                                    <option>France</option>
+                                                    <option>Germany</option>
+                                                    <option>India</option>
+                                                    <option>Israel</option>
+                                                    <option>Italy</option>
+                                                    <option>Latvia</option>
+                                                    <option>Lithuania</option>
+                                                    <option>Poland</option>
+                                                    <option>Republic of Korea</option>
+                                                    <option>Russian Federation</option>
+                                                    <option>Singapore</option>
+                                                    <option>Spain</option>
+                                                    <option>Switzerland</option>
+                                                    <option>Thailand</option>
+                                                    <option>Turkey</option>
+                                                    <option>Ukraine</option>
+                                                    <option>United Kingdom</option>
+                                                    <option>United States</option>
+                                                </select>                                                    
+                                            </div>
+                                        </div>
+                                    </div> 
+                                    <div class="col-md-12">
+                                       <ul class="top">
+                                            <li class="pull-left"><a href="/countries/">Countries</a></li>
+                                            <li class="pull-left"><a href="/directions/">Directions</a></li>
+                                            <li class="pull-left"><a href="/clinics/">Clinics</a></li>
+                                            <li class="pull-left"><a href="/illnesses/">Illnesses</a></li>
+                                            <div class="clearfix"></div>
+                                        </ul>                                                                                
+                                        
+                                    </div>
+                                </div>
+                            </div>     
+                            
+                            <div class="col-md-2 paddingSearch">
+                                <input type="submit" id="search_find" value="Search">
+                            </div>  
+                        </div>                            
+                    </div> 
+                    
+                </div> 
+                <div class="col-md-2 col-sm-3 col-xs-3 centerFlex minWidth">
+                    <a class="video" data-toggle="modal" data-target="#myModal">                
+                        <div class="row borderColor">
+                            <div class="col-md-8  col-sm-8 col-xs-8 paddindWatchIt">
+                                <div class="row">
+                                    <div class="col-md-12 col-sm-12 col-xs-12">How it works?</div>
+                                    <div class="col-md-12 col-sm-12 col-xs-12 WatchIt">WATCH IT</div>                                
+                                </div>                            
+                            </div>
+                            <div class="col-md-4 col-sm-4 col-xs-4 paddindWatchIt"><img src="img/play_circle.png"></div>                            
+                        </div>   
+                    </a>
+                </div>              
+                <div class="col-md-3 col-sm-12 col-xs-11 centerFlex text-right">
+                     <div class="row">
+                         <div class="col-md-12">Hot line support:</div>
+                         <div class="col-md-12 WatchIt">+38(067)352-91-82</div>                                
+                     </div>                            
+                    
+                </div>                 
+            </div>
+        </div>    
+      
+        
+        <!-- /.modal VIDEO -->
+        <div id="myModal" class="modal fade" tabindex="-1" role="dialog">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                  <h4 class="modal-title">Modal title</h4>
+                </div>
+                <div class="modal-body">
+                    <iframe width="100%" height="360px" src="https://www.youtube.com/embed/HNruYrXqhQM?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+                <!--  <p>One fine body&hellip;</p>-->
+                </div>                  
+                <!--<div class="modal-footer">
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-primary">Save changes</button>
+                </div>-->
+              </div><!-- /.modal-content -->
+            </div><!-- /.modal-dialog -->
+        </div><!-- /.modal --> 
+        
+        <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.17.0/TweenMax.min.js"></script>
+        <script src="js/ripple-config.js"></script> 
+        <script>
+            $(function()
+            {  
+             $("#js-ripple-btn").on("click", function()
+             {                 
+                 $(".popup").toggle();
+             });
+             
+            });
+        </script>
+    </body>    
+</html>
